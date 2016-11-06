@@ -16,5 +16,16 @@ namespace RealEstateListing
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Form2 f = new Form2(comboBox1.Text);
+            f.ShowDialog();
+        }
     }
 }
